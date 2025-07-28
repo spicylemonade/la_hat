@@ -41,7 +41,7 @@ export default function QuantityModal({ isOpen, onClose, item, selectedSize }) {
           >
             {/* Header */}
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-headline text-matcha">Add to Order</h2>
+              <h2 className="text-2xl font-headline text-matcha">Thêm Vào Đơn Hàng</h2>
               <button
                 onClick={onClose}
                 className="p-1 rounded-full hover:bg-matcha/10 transition-colors"

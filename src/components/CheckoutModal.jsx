@@ -24,7 +24,7 @@ export default function CheckoutModal() {
     e.preventDefault()
     
     if (!customerName.trim() || !customerPhone.trim() || !customerAddress.trim()) {
-      alert('Vui lòng điền họ tên, số điện thoại và địa chỉ')
+      alert('Vui lòng điền tên, số điện thoại và địa chỉ')
       return
     }
 
@@ -165,14 +165,14 @@ export default function CheckoutModal() {
               
               <div>
                 <label className="block text-sm font-semibold text-toast mb-2">
-                  Họ Tên *
+                  Tên *
                 </label>
                 <input
                   type="text"
                   value={customerName}
                   onChange={(e) => setCustomerName(e.target.value)}
                   className="w-full p-3 rounded-xl border border-matcha/30 focus:border-matcha focus:outline-none focus:ring-2 focus:ring-matcha/20 transition-all"
-                  placeholder="Nhập họ tên của bạn"
+                  placeholder="Nhập tên của bạn"
                   required
                   disabled={isSubmitting}
                 />
