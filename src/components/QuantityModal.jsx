@@ -56,13 +56,13 @@ export default function QuantityModal({ isOpen, onClose, item, selectedSize }) {
               <p className="text-sm text-toast/70 mb-2">{item.description}</p>
               <div className="flex justify-between items-center">
                 <span className="text-sm font-semibold text-matcha">Size: {selectedSize}</span>
-                <span className="text-lg font-bold text-matcha">{item.prices[selectedSize]} each</span>
+                <span className="text-lg font-bold text-matcha">{item.prices[selectedSize]} mỗi ly</span>
               </div>
             </div>
 
             {/* Quantity Selector */}
             <div className="mb-6">
-              <label className="block text-sm font-semibold text-toast mb-3">Quantity</label>
+              <label className="block text-sm font-semibold text-toast mb-3">Số Lượng</label>
               <div className="flex items-center justify-center gap-4">
                 <motion.button
                   whileHover={{ scale: 1.1 }}
@@ -91,7 +91,7 @@ export default function QuantityModal({ isOpen, onClose, item, selectedSize }) {
             {/* Total Price */}
             <div className="bg-matcha/10 rounded-xl p-4 mb-6">
               <div className="flex justify-between items-center">
-                <span className="text-lg font-semibold text-toast">Total:</span>
+                <span className="text-lg font-semibold text-toast">Tổng Cộng:</span>
                 <span className="text-2xl font-bold text-matcha">${totalPrice}</span>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function QuantityModal({ isOpen, onClose, item, selectedSize }) {
               className="w-full btn-matcha flex items-center justify-center gap-2"
             >
               <ShoppingCart className="w-4 h-4" />
-              Add to Order
+              Thêm Vào Đơn Hàng
             </motion.button>
           </motion.div>
         </motion.div>

@@ -72,7 +72,7 @@ export default function ProductCard({ item }) {
         onClick={() => setIsModalOpen(true)}
         className="btn-matcha w-full"
       >
-        Order Now
+        Đặt Hàng
       </motion.button>
 
       {/* Quantity Modal */}

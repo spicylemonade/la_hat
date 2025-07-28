@@ -34,7 +34,7 @@ export default function CompleteOrderButton() {
               {totalItems}
             </motion.div>
           </div>
-          <span>Complete Order</span>
+          <span>Hoàn Tất Đơn Hàng</span>
           <ChevronUp className="w-4 h-4" />
         </motion.button>
       </motion.div>

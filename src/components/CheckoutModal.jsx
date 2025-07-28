@@ -24,12 +24,12 @@ export default function CheckoutModal() {
     e.preventDefault()
     
     if (!customerName.trim() || !customerPhone.trim() || !customerAddress.trim()) {
-      alert('Please fill in name, phone number, and address')
+      alert('Vui lòng điền họ tên, số điện thoại và địa chỉ')
       return
     }
 
     if (cartItems.length === 0) {
-      alert('Your cart is empty')
+      alert('Giỏ hàng của bạn đang trống')
       return
     }
 
@@ -52,7 +52,7 @@ export default function CheckoutModal() {
       setIsCheckoutOpen(false)
     } catch (error) {
       console.error('Order submission failed:', error)
-      alert('Failed to submit order. Please try again.')
+      alert('Không thể gửi đơn hàng. Vui lòng thử lại.')
     } finally {
       setIsSubmitting(false)
     }
@@ -81,7 +81,7 @@ export default function CheckoutModal() {
           >
             {/* Header */}
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-headline text-matcha">Complete Your Order</h2>
+              <h2 className="text-2xl font-headline text-matcha">Hoàn Tất Đơn Hàng</h2>
               <button
                 onClick={handleClose}
                 className="p-1 rounded-full hover:bg-matcha/10 transition-colors"
@@ -93,7 +93,7 @@ export default function CheckoutModal() {
 
             {/* Order Items */}
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-toast mb-4">Order Summary</h3>
+              <h3 className="text-lg font-semibold text-toast mb-4">Tóm Tắt Đơn Hàng</h3>
               <div className="space-y-3">
                 {cartItems.map((item) => (
                   <motion.div
@@ -105,7 +105,7 @@ export default function CheckoutModal() {
                     <div className="flex-1">
                       <h4 className="font-semibold text-toast">{item.name}</h4>
                       <p className="text-sm text-toast/70">Size: {item.size}</p>
-                      <p className="text-sm font-semibold text-matcha">{item.unitPrice} each</p>
+                      <p className="text-sm font-semibold text-matcha">{item.unitPrice} mỗi ly</p>
                     </div>
                     
                     <div className="flex items-center gap-3">
@@ -153,7 +153,7 @@ export default function CheckoutModal() {
               {/* Total */}
               <div className="bg-matcha/10 rounded-xl p-4 mt-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-xl font-semibold text-toast">Total:</span>
+                  <span className="text-xl font-semibold text-toast">Tổng Cộng:</span>
                   <span className="text-2xl font-bold text-matcha">${getTotalPrice()}</span>
                 </div>
               </div>
@@ -161,18 +161,18 @@ export default function CheckoutModal() {
 
             {/* Customer Details Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
-              <h3 className="text-lg font-semibold text-toast mb-4">Contact Information</h3>
+              <h3 className="text-lg font-semibold text-toast mb-4">Thông Tin Liên Hệ</h3>
               
               <div>
                 <label className="block text-sm font-semibold text-toast mb-2">
-                  Full Name *
+                  Họ Tên *
                 </label>
                 <input
                   type="text"
                   value={customerName}
                   onChange={(e) => setCustomerName(e.target.value)}
                   className="w-full p-3 rounded-xl border border-matcha/30 focus:border-matcha focus:outline-none focus:ring-2 focus:ring-matcha/20 transition-all"
-                  placeholder="Enter your full name"
+                  placeholder="Nhập họ tên của bạn"
                   required
                   disabled={isSubmitting}
                 />
@@ -180,28 +180,28 @@ export default function CheckoutModal() {
               
               <div>
                 <label className="block text-sm font-semibold text-toast mb-2">
-                  Phone Number *
+                  Số Điện Thoại *
                 </label>
                 <input
                   type="tel"
                   value={customerPhone}
                   onChange={(e) => setCustomerPhone(e.target.value)}
                   className="w-full p-3 rounded-xl border border-matcha/30 focus:border-matcha focus:outline-none focus:ring-2 focus:ring-matcha/20 transition-all"
-                  placeholder="Enter your phone number"
+                  placeholder="Nhập số điện thoại của bạn"
                   required
                   disabled={isSubmitting}
                 />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-toast mb-2">
-                  Address *
+                  Địa Chỉ *
                 </label>
                 <input
                   type="text"
                   value={customerAddress}
                   onChange={(e) => setCustomerAddress(e.target.value)}
                   className="w-full p-3 rounded-xl border border-matcha/30 focus:border-matcha focus:outline-none focus:ring-2 focus:ring-matcha/20 transition-all"
-                  placeholder="Enter your address"
+                  placeholder="Nhập địa chỉ của bạn"
                   required
                   disabled={isSubmitting}
                 />
@@ -215,7 +215,7 @@ export default function CheckoutModal() {
                   className="flex-1 py-3 px-4 rounded-xl border border-matcha/30 text-matcha hover:bg-matcha/10 transition-colors"
                   disabled={isSubmitting}
                 >
-                  Cancel
+                  Hủy
                 </button>
                 <button
                   type="submit"
@@ -225,12 +225,12 @@ export default function CheckoutModal() {
                   {isSubmitting ? (
                     <>
                       <div className="w-4 h-4 border-2 border-toast/30 border-t-toast rounded-full animate-spin"></div>
-                      Placing Order...
+                      Đang Đặt Hàng...
                     </>
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      Place Order
+                      Đặt Hàng
                     </>
                   )}
                 </button>
@@ -238,7 +238,7 @@ export default function CheckoutModal() {
             </form>
 
             <div className="mt-4 text-xs text-toast/60 text-center">
-              Order details will be emailed to the restaurant. You'll be contacted about payment and pickup.
+              Chi tiết đơn hàng sẽ được gửi email đến quán. Chúng tôi sẽ liên hệ về thanh toán và giao hàng.
             </div>
           </motion.div>
         </motion.div>
