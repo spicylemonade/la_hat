@@ -1,0 +1,80 @@
+{
+  "categories": {
+    "matcha": {
+      "name": "Premium Matcha (Natsu)",
+      "items": [
+        {
+          "id": "matcha-latte",
+          "name": "Matcha Latte",
+          "description": "Premium Japanese Matcha with steamed milk",
+          "prices": {
+            "S": "45K",
+            "M": "55K",
+            "L": "65K"
+          },
+          "image": "/img/matcha-latte.jpg"
+        },
+        {
+          "id": "dalgona-matcha",
+          "name": "Dalgona Matcha",
+          "description": "Whipped matcha cream over milk",
+          "prices": {
+            "S": "50K",
+            "M": "60K",
+            "L": "70K"
+          },
+          "image": "/img/dalgona-matcha.jpg"
+        },
+        {
+          "id": "matcha-strawberry",
+          "name": "Matcha Strawberry",
+          "description": "Premium matcha with fresh strawberry",
+          "prices": {
+            "S": "55K",
+            "M": "65K",
+            "L": "75K"
+          },
+          "image": "/img/matcha-strawberry.jpg"
+        }
+      ]
+    },
+    "coffee": {
+      "name": "Bold Espresso Coffee",
+      "items": [
+        {
+          "id": "americano",
+          "name": "Americano",
+          "description": "Bold, aromatic espresso with hot water",
+          "prices": {
+            "S": "30K",
+            "M": "40K", 
+            "L": "50K"
+          },
+          "image": "/img/americano.jpg"
+        },
+        {
+          "id": "latte",
+          "name": "Coffee Latte",
+          "description": "Smooth espresso with steamed milk",
+          "prices": {
+            "S": "40K",
+            "M": "50K",
+            "L": "60K"
+          },
+          "image": "/img/latte.jpg"
+        },
+        {
+          "id": "vietnamese-milk-coffee",
+          "name": "Vietnamese Milk Coffee",
+          "description": "Traditional Vietnamese coffee with condensed milk",
+          "prices": {
+            "S": "35K",
+            "M": "45K",
+            "L": "55K"
+          },
+          "image": "/img/vietnamese-coffee.jpg"
+        }
+      ]
+    }
+  }
+} 

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body bg-cream text-toast;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+@layer components {
+  .btn-matcha {
+    @apply bg-matcha hover:bg-opacity-80 text-toast font-semibold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+  
+  .card-soft {
+    @apply bg-cream/90 backdrop-blur-sm shadow-lg rounded-2xl border border-matcha/20 hover:shadow-xl transition-all duration-300;
+  }
+  
+  .blob-bg {
+    @apply absolute inset-0 overflow-hidden pointer-events-none;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-matcha to-skyPastel bg-clip-text text-transparent;
+  }
+}
+
+/* Custom animations */
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-animation-delayed {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF7EC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A6DCA4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8BC285;
+} 
