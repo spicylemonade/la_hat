@@ -1,12 +1,12 @@
 {
   "categories": {
     "matcha": {
-      "name": "Premium Matcha (Natsu)",
+      "name": "Matcha Cao Cấp (Natsu)",
       "items": [
         {
           "id": "matcha-latte",
           "name": "Matcha Latte",
-          "description": "Premium Japanese Matcha with steamed milk",
+          "description": "Matcha Nhật Bản cao cấp với sữa tươi đánh bọt",
           "prices": {
             "S": "45K",
             "M": "55K",
@@ -17,7 +17,7 @@
         {
           "id": "dalgona-matcha",
           "name": "Dalgona Matcha",
-          "description": "Whipped matcha cream over milk",
+          "description": "Kem matcha đánh bọt mềm mịn trên nền sữa tươi",
           "prices": {
             "S": "50K",
             "M": "60K",
@@ -27,8 +27,8 @@
         },
         {
           "id": "matcha-strawberry",
-          "name": "Matcha Strawberry",
-          "description": "Premium matcha with fresh strawberry",
+          "name": "Matcha Dâu Tây",
+          "description": "Matcha cao cấp kết hợp với dâu tây tươi ngon",
           "prices": {
             "S": "55K",
             "M": "65K",
@@ -39,12 +39,12 @@
       ]
     },
     "coffee": {
-      "name": "Bold Espresso Coffee",
+      "name": "Cà Phê Espresso Đậm Đà",
       "items": [
         {
           "id": "americano",
           "name": "Americano",
-          "description": "Bold, aromatic espresso with hot water",
+          "description": "Espresso đậm đà, thơm lừng pha với nước nóng",
           "prices": {
             "S": "30K",
             "M": "40K", 
@@ -54,8 +54,8 @@
         },
         {
           "id": "latte",
-          "name": "Coffee Latte",
-          "description": "Smooth espresso with steamed milk",
+          "name": "Cà Phê Latte",
+          "description": "Espresso mềm mại với sữa tươi đánh bọt",
           "prices": {
             "S": "40K",
             "M": "50K",
@@ -65,8 +65,8 @@
         },
         {
           "id": "vietnamese-milk-coffee",
-          "name": "Vietnamese Milk Coffee",
-          "description": "Traditional Vietnamese coffee with condensed milk",
+          "name": "Cà Phê Sữa Việt Nam",
+          "description": "Cà phê truyền thống Việt Nam với sữa đặc ngọt ngào",
           "prices": {
             "S": "35K",
             "M": "45K",

@@ -18,7 +18,7 @@ export default function Footer() {
             >
               <h3 className="text-3xl font-headline text-matcha mb-4">Lá & Hạt</h3>
               <p className="text-cream/80 mb-4">
-                Premium matcha drinks and traditional Vietnamese coffee, crafted with love and served in a warm, welcoming atmosphere.
+                Đồ uống matcha cao cấp và cà phê truyền thống Việt Nam, được pha chế tận tâm và phục vụ trong không gian ấm cúng.
               </p>
             </motion.div>
 
@@ -29,7 +29,7 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-center md:text-left"
             >
-              <h4 className="text-xl font-headline text-strawberry mb-4">Contact Us</h4>
+              <h4 className="text-xl font-headline text-strawberry mb-4">Liên Hệ</h4>
               <div className="space-y-2 text-cream/80">
                 <p className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
@@ -37,11 +37,11 @@ export default function Footer() {
                 </p>
                 <p className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  lavahat.hcm.q2@gmail.com
+                  la.hat.vietnam@gmail.com
                 </p>
                 <p className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
-                  Imperia An Phu, District 2, HCMC
+                  Imperia An Phu, Quận 2, TP.HCM
                 </p>
               </div>
             </motion.div>
@@ -53,18 +53,18 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-center md:text-left"
             >
-              <h4 className="text-xl font-headline text-skyPastel mb-4">Follow Us</h4>
+              <h4 className="text-xl font-headline text-skyPastel mb-4">Theo Dõi</h4>
               <div className="space-y-2 text-cream/80 mb-4">
                 <p className="flex items-center gap-2">
                   <Clock className="w-4 h-4" />
-                  Daily: 7:00 AM - 9:00 PM
+                  Hàng Ngày: 7:00 AM - 9:00 PM
                 </p>
                 <p className="flex items-center gap-2">
                   <Instagram className="w-4 h-4" />
                   @lavahat.hcm.q2
                 </p>
                 <p className="text-sm text-cream/60">
-                  Grand Opening: 10% off delivery to Q2!
+                  Khuyến mãi khai trương: 10% giảm giá giao hàng Q2!
                 </p>
               </div>
               
@@ -77,16 +77,16 @@ export default function Footer() {
                   className="flex items-center justify-center gap-2 bg-matcha hover:bg-matcha/80 text-toast font-semibold py-2 px-4 rounded-lg transition-all duration-300"
                 >
                   <Phone className="w-4 h-4" />
-                  Order via Zalo
+                  Đặt Hàng Qua Zalo
                 </motion.a>
                 <motion.a
-                  href="mailto:lavahat.hcm.q2@gmail.com"
+                  href="mailto:la.hat.vietnam@gmail.com"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="flex items-center justify-center gap-2 bg-strawberry hover:bg-strawberry/80 text-toast font-semibold py-2 px-4 rounded-lg transition-all duration-300"
                 >
                   <Mail className="w-4 h-4" />
-                  Email Us
+                  Gửi Email
                 </motion.a>
               </div>
             </motion.div>
@@ -100,7 +100,7 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="border-t border-cream/20 py-6 text-center text-cream/60"
         >
-          <p>&copy; {currentYear} Lá & Hạt. Made with 💚 in Vietnam.</p>
+          <p>&copy; {currentYear} Lá & Hạt. Tạo ra với 💚 tại Việt Nam.</p>
         </motion.div>
       </div>
     </footer>

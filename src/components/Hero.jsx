@@ -70,7 +70,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-xl md:text-2xl text-toast mb-8 max-w-2xl mx-auto"
           >
-            Premium matcha drinks and traditional Vietnamese coffee in a warm, cozy atmosphere
+            Đồ uống matcha cao cấp và cà phê truyền thống Việt Nam trong không gian ấm cúng, thân thiện
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
               className="btn-matcha inline-block"
             >
-              Explore Menu
+              Khám Phá Thực Đơn
             </motion.a>
             <motion.a
               href="#about"
@@ -92,7 +92,7 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
               className="inline-block bg-transparent border-2 border-matcha text-matcha font-semibold py-3 px-6 rounded-xl transition-all duration-300 hover:bg-matcha hover:text-toast"
             >
-              Our Story
+              Câu Chuyện Của Chúng Tôi
             </motion.a>
           </motion.div>
         </motion.div>

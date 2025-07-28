@@ -5,23 +5,18 @@ export default function About() {
   const values = [
     {
       icon: <Award className="w-12 h-12" />,
-      title: 'Premium Quality',
-      description: 'We source only the finest matcha and coffee beans, ensuring every cup meets our high standards.'
+      title: 'Chất Lượng Cao Cấp',
+      description: 'Chúng tôi chỉ chọn matcha và cà phê hạt tốt nhất, đảm bảo mỗi ly đều đạt tiêu chuẩn cao.'
     },
     {
       icon: <Coffee className="w-12 h-12" />,
-      title: 'Vietnamese Heritage',
-      description: 'Our coffee traditions are rooted in Vietnamese culture, bringing authentic flavors to every brew.'
+      title: 'Di Sản Việt Nam',
+      description: 'Truyền thống cà phê của chúng tôi có nguồn gốc từ văn hóa Việt Nam, mang đến hương vị đích thực trong từng ly.'
     },
     {
       icon: <Heart className="w-12 h-12" />,
-      title: 'Crafted with Love',
-      description: 'Every drink is prepared with care and attention to detail, creating moments of joy in your day.'
-    },
-    {
-      icon: <Home className="w-12 h-12" />,
-      title: 'Warm Atmosphere',
-      description: 'We believe in creating a welcoming space where friends gather and memories are made.'
+      title: 'Pha Chế Tận Tâm',
+      description: 'Mỗi ly đồ uống được chuẩn bị cẩn thận và tỉ mỉ, tạo nên những khoảnh khắc vui vẻ trong ngày của bạn.'
     }
   ]
 
@@ -37,11 +32,11 @@ export default function About() {
             className="text-center"
           >
             <h1 className="text-5xl md:text-6xl font-headline text-matcha mb-6">
-              About Lá & Hạt
+              Về Lá & Hạt
             </h1>
             <p className="text-xl text-toast/80 max-w-3xl mx-auto">
-              Where traditional Vietnamese coffee culture meets the art of premium matcha, 
-              creating a unique experience in every cup.
+              Nơi văn hóa cà phê truyền thống Việt Nam gặp gỡ nghệ thuật pha chế matcha cao cấp, 
+              tạo nên trải nghiệm độc đáo trong từng ly.
             </p>
           </motion.div>
         </div>
@@ -56,19 +51,19 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl font-headline text-matcha mb-6">Our Story</h2>
+              <h2 className="text-4xl font-headline text-matcha mb-6">Câu Chuyện Của Chúng Tôi</h2>
               <div className="space-y-4 text-lg text-toast/80">
                 <p>
-                  Lá & Hạt was born from a simple dream: to create a bridge between the rich coffee 
-                  traditions of Vietnam and the serene art of Japanese matcha preparation.
+                  Lá & Hạt ra đời từ một giấc mơ đơn giản: tạo nên cầu nối giữa truyền thống cà phê 
+                  phong phú của Việt Nam và nghệ thuật pha chế matcha thanh tịnh của Nhật Bản.
                 </p>
                 <p>
-                  Our name, meaning "Leaves & Seeds," represents the foundation of our craft.
+                  Tên gọi của chúng tôi, có nghĩa là "Lá & Hạt," đại diện cho nền tảng của nghề thủ công này.
                 </p>
                 <p>
-                  We believe that great drinks come from great ingredients, prepared with traditional 
-                  techniques and served with genuine care. Every cup tells a story of heritage, 
-                  quality, and the simple joy of sharing good drinks with good people.
+                  Chúng tôi tin rằng những ly đồ uống tuyệt vời đến từ nguyên liệu tuyệt vời, được pha chế 
+                  bằng kỹ thuật truyền thống và phục vụ với sự chăm sóc chân thành. Mỗi ly đều kể một câu chuyện 
+                  về di sản, chất lượng, và niềm vui đơn giản khi chia sẻ đồ uống ngon với những người tốt.
                 </p>
               </div>
             </motion.div>
@@ -114,9 +109,9 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-headline text-matcha mb-4">Our Values</h2>
+            <h2 className="text-4xl font-headline text-matcha mb-4">Những Giá Trị Cốt Lõi</h2>
             <p className="text-lg text-toast/80 max-w-2xl mx-auto">
-              The principles that guide everything we do, from sourcing ingredients to serving our community
+              Những nguyên tắc để hướng dẫn mọi việc chúng tôi làm, từ lựa chọn nguyên liệu đến phục vụ cộng đồng
             </p>
           </motion.div>
 
@@ -153,23 +148,23 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl font-headline text-matcha mb-6">Visit Us</h2>
+            <h2 className="text-4xl font-headline text-matcha mb-6">Đến Thăm Chúng Tôi</h2>
             <div className="card-soft p-8 mb-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                 <div>
                   <MapPin className="w-8 h-8 mx-auto mb-2 text-matcha" />
-                  <h3 className="font-headline text-toast mb-1">Location</h3>
+                  <h3 className="font-headline text-toast mb-1">Vị Trí</h3>
                   <p className="text-toast/70">Imperia An Phu Apartment</p>
-                  <p className="text-toast/70">District 2, HCMC</p>
+                  <p className="text-toast/70">Quận 2, TP.HCM</p>
                 </div>
                 <div>
                   <Clock className="w-8 h-8 mx-auto mb-2 text-matcha" />
-                  <h3 className="font-headline text-toast mb-1">Hours</h3>
-                  <p className="text-toast/70">Daily: 7:00 AM - 9:00 PM</p>
+                  <h3 className="font-headline text-toast mb-1">Giờ Mở Cửa</h3>
+                  <p className="text-toast/70">Hàng Ngày: 7:00 AM - 9:00 PM</p>
                 </div>
                 <div>
                   <Phone className="w-8 h-8 mx-auto mb-2 text-matcha" />
-                  <h3 className="font-headline text-toast mb-1">Contact</h3>
+                  <h3 className="font-headline text-toast mb-1">Liên Hệ</h3>
                   <p className="text-toast/70">Zalo: 0906615103</p>
                 </div>
               </div>
@@ -182,22 +177,22 @@ export default function About() {
                 className="btn-matcha flex items-center justify-center gap-2"
               >
                 <Phone className="w-4 h-4" />
-                Contact Us on Zalo
+                Liên Hệ Với Chúng Tôi Trên Zalo
               </motion.a>
-              <motion.a
-                href="mailto:lavahat.hcm.q2@gmail.com"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-strawberry hover:bg-strawberry/80 text-toast font-semibold py-3 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-2"
-              >
-                <Mail className="w-4 h-4" />
-                Send Email
-              </motion.a>
+                              <motion.a
+                  href="mailto:la.hat.vietnam@gmail.com"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-strawberry hover:bg-strawberry/80 text-toast font-semibold py-3 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-2"
+                >
+                  <Mail className="w-4 h-4" />
+                  Gửi Email
+                </motion.a>
             </div>
             <div className="mt-4 text-center">
-              <p className="text-matcha font-semibold">Grand Opening Special!</p>
-              <p className="text-toast/70">10% off for delivery around District 2</p>
-              <p className="text-sm text-toast/60">Follow @lavahat.hcm.q2 for updates</p>
+              <p className="text-matcha font-semibold">Khuyến Mãi Đặc Biệt!</p>
+              <p className="text-toast/70">10% giảm giá cho giao hàng trong Quận 2</p>
+              <p className="text-sm text-toast/60">Theo dõi @lavahat.hcm.q2 để cập nhật</p>
             </div>
           </motion.div>
         </div>

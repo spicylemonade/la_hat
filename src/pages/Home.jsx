@@ -26,10 +26,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-headline text-matcha mb-4">
-              Featured Drinks
+              Đồ Uống Đặc Trưng
             </h2>
             <p className="text-xl text-toast/80 max-w-2xl mx-auto">
-              Discover our signature Premium Japanese Matcha (Natsu) and bold espresso-based coffee
+              Khám phá những đồ uống đặc trưng Matcha cao cấp Nhật Bản (Natsu) và cà phê espresso đậm đà của chúng tôi
             </p>
           </motion.div>
 
@@ -58,7 +58,7 @@ export default function Home() {
                 whileTap={{ scale: 0.95 }}
                 className="btn-matcha text-lg px-8 py-4"
               >
-                View Full Menu
+                Xem Toàn Bộ Thực Đơn
               </motion.button>
             </Link>
           </motion.div>
@@ -75,15 +75,15 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-4xl md:text-5xl font-headline text-matcha mb-6">
-                Our Story
+                Câu Chuyện Của Chúng Tôi
               </h2>
               <p className="text-lg text-toast/80 mb-6">
-                Born from a passion for authentic Vietnamese coffee culture and the art of matcha, 
-                Lá & Hạt brings together the best of both worlds in a warm, inviting space.
+                Sinh ra từ niềm đam mê văn hóa cà phê Việt Nam đích thực và nghệ thuật matcha, 
+                Lá & Hạt mang đến sự kết hợp tuyệt vời của cả hai thế giới trong một không gian ấm cúng, thân thiện.
               </p>
               <p className="text-lg text-toast/80 mb-8">
-                Every cup is crafted with care, using premium ingredients and traditional techniques 
-                passed down through generations.
+                Mỗi ly đồ uống được pha chế tận tâm, sử dụng nguyên liệu cao cấp và kỹ thuật truyền thống 
+                được truyền lại qua nhiều thế hệ.
               </p>
               <Link to="/about">
                 <motion.button
@@ -91,7 +91,7 @@ export default function Home() {
                   whileTap={{ scale: 0.95 }}
                   className="bg-transparent border-2 border-matcha text-matcha font-semibold py-3 px-6 rounded-xl transition-all duration-300 hover:bg-matcha hover:text-toast"
                 >
-                  Learn More
+                  Tìm Hiểu Thêm
                 </motion.button>
               </Link>
             </motion.div>
@@ -105,7 +105,7 @@ export default function Home() {
               {/* Placeholder for cafe image */}
               <div className="bg-gradient-to-br from-matcha/30 to-strawberry/30 rounded-2xl p-8 text-center">
                 <Store className="w-16 h-16 mx-auto mb-4 text-toast/70" />
-                <p className="text-toast/70">Cozy atmosphere awaits</p>
+                <p className="text-toast/70">Không gian ấm cúng đang chờ đón bạn</p>
               </div>
               
               {/* Floating elements */}

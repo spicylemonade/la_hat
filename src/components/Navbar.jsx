@@ -7,9 +7,9 @@ export default function Navbar() {
   const location = useLocation()
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Menu', href: '/menu' },
-    { name: 'About', href: '/about' },
+    { name: 'Trang Chủ', href: '/' },
+    { name: 'Thực Đơn', href: '/menu' },
+    { name: 'Về Chúng Tôi', href: '/about' },
   ]
 
   const isActive = (path) => location.pathname === path
