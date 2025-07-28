@@ -27,14 +27,47 @@ export async function processOrder(orderData) {
     const orderId = generateOrderId()
     const itemsList = formatCartItemsForEmail(orderData.cartItems)
     
-    // Normalize phone number for display
+    // Normalize phone number for display - handles various formats
     const normalizePhone = (phone) => {
+      if (!phone) return phone
+      
+      // Remove all non-digit characters first
       const digits = phone.replace(/\D/g, '')
-      if (digits.length === 10) return `(${digits.slice(0,3)}) ${digits.slice(3,6)}-${digits.slice(6)}`
-      if (digits.length === 11 && digits.startsWith('1')) {
-        const cleaned = digits.slice(1)
-        return `(${cleaned.slice(0,3)}) ${cleaned.slice(3,6)}-${cleaned.slice(6)}`
+      
+      // Handle different digit lengths
+      if (digits.length === 10) {
+        // Standard US format: (XXX) XXX-XXXX
+        return `(${digits.slice(0,3)}) ${digits.slice(3,6)}-${digits.slice(6)}`
+      } 
+      else if (digits.length === 11) {
+        // Handle US numbers with country code
+        if (digits.startsWith('1')) {
+          const cleaned = digits.slice(1)
+          return `+1 (${cleaned.slice(0,3)}) ${cleaned.slice(3,6)}-${cleaned.slice(6)}`
+        } else {
+          // Other 11-digit international numbers
+          return `+${digits.slice(0,1)} (${digits.slice(1,4)}) ${digits.slice(4,7)}-${digits.slice(7)}`
+        }
       }
+      else if (digits.length === 12 && digits.startsWith('84')) {
+        // Vietnam format +84 XXX XXX XXX
+        return `+84 ${digits.slice(2,5)} ${digits.slice(5,8)} ${digits.slice(8)}`
+      }
+      else if (digits.length >= 7 && digits.length <= 15) {
+        // Other international formats - just add country code separator
+        if (digits.length > 10) {
+          return `+${digits.slice(0, digits.length - 10)} ${digits.slice(-10, -7)} ${digits.slice(-7, -4)} ${digits.slice(-4)}`
+        } else {
+          // Shorter numbers, format as XXX-XXXX or XXX-XXX-XXXX
+          if (digits.length === 7) {
+            return `${digits.slice(0,3)}-${digits.slice(3)}`
+          } else {
+            return `${digits.slice(0,3)}-${digits.slice(3,6)}-${digits.slice(6)}`
+          }
+        }
+      }
+      
+      // If none of the above, return original (could be letters, too short, etc.)
       return phone
     }
 
