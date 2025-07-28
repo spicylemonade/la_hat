@@ -88,7 +88,7 @@ export async function processOrder(orderData) {
       console.log(emailMessage)
       console.log('=== END EMAIL PREVIEW ===')
 
-      alert(`Order #${orderId} received!\n\n⚠️ To actually send emails, please provide your Template ID from EmailJS.\n\nCheck the browser console to see the email content that would be sent.`)
+      alert(`Đơn hàng #${orderId} đã nhận!\n\n⚠️ Để thực sự gửi email, vui lòng cung cấp Template ID từ EmailJS.\n\nKiểm tra console trình duyệt để xem nội dung email sẽ được gửi.`)
       
       return {
         success: true,
@@ -119,7 +119,7 @@ export async function processOrder(orderData) {
     console.log('Email sent successfully:', result)
 
     // Show success message
-    alert(`Order #${orderId} received!\n\nOrder details have been emailed to ${COMPANY_EMAIL}.\nYou will be contacted soon about payment and pickup.\n\nThank you for your order! 🍵`)
+    alert(`Đơn hàng #${orderId} đã nhận!\n\nChi tiết đơn hàng đã được gửi email đến ${COMPANY_EMAIL}.\nChúng tôi sẽ liên hệ sớm về thanh toán và giao hàng.\n\nCảm ơn bạn đã đặt hàng! 🍵`)
 
     return {
       success: true,
@@ -129,7 +129,7 @@ export async function processOrder(orderData) {
     }
   } catch (error) {
     console.error('Order processing failed:', error)
-    alert('Failed to send order email. Please try again or call the restaurant directly.')
+    alert('Không thể gửi email đơn hàng. Vui lòng thử lại hoặc gọi trực tiếp cho quán.')
     throw error
   }
 } 
