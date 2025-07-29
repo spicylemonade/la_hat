@@ -9,7 +9,8 @@ export default function Home() {
   // Get a few featured items from each category
   const featuredItems = [
     ...menuData.categories.matcha.items.slice(0, 2),
-    ...menuData.categories.coffee.items.slice(0, 2)
+    ...menuData.categories.coffee.items.slice(0, 1),
+    ...menuData.categories.tea.items.slice(1, 2),
   ]
 
   return (

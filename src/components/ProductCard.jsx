@@ -6,6 +6,10 @@ import QuantityModal from './QuantityModal'
 export default function ProductCard({ item }) {
   const [selectedSize, setSelectedSize] = useState('M')
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [imageError, setImageError] = useState(false)
+
+  // Construct the correct image path using Vite's base URL environment variable
+  const imageUrl = item.image ? `${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}` : '';
 
   return (
     <motion.div
@@ -22,13 +26,22 @@ export default function ProductCard({ item }) {
       }}
       className="card-soft p-6 flex flex-col items-center text-center h-full"
     >
-      {/* Product Image Placeholder */}
+      {/* Product Image */}
       <motion.div
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.3 }}
         className="w-32 h-32 bg-gradient-to-br from-matcha/20 to-strawberry/20 rounded-full flex items-center justify-center mb-4 overflow-hidden"
       >
-        <Coffee className={`w-12 h-12 ${item.name.includes('Matcha') ? 'text-matcha/70' : 'text-toast/70'}`} />
+        {!imageError && imageUrl ? (
+          <img 
+            src={imageUrl} 
+            alt={item.name}
+            className="w-full h-full object-cover rounded-full"
+            onError={() => setImageError(true)}
+          />
+        ) : (
+          <Coffee className={`w-12 h-12 ${item.name.includes('Matcha') ? 'text-matcha/70' : 'text-toast/70'}`} />
+        )}
       </motion.div>
 
       {/* Product Info */}

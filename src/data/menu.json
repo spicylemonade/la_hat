@@ -1,78 +1,108 @@
 {
   "categories": {
     "matcha": {
-      "name": "Matcha Cao Cấp (Natsu)",
+      "name": "Matcha",
       "items": [
         {
           "id": "matcha-latte",
           "name": "Matcha Latte",
-          "description": "Matcha Nhật Bản cao cấp với sữa tươi đánh bọt",
-          "prices": {
-            "S": "45K",
-            "M": "55K",
-            "L": "65K"
-          },
-          "image": "/img/matcha-latte.jpg"
+          "description": "Classic rich and creamy matcha latte.",
+          "prices": { "S": "35K", "M": "45K", "L": "55K" },
+          "image": "/img/matcha-latte.png"
+        },
+        {
+          "id": "strawberry-matcha",
+          "name": "Matcha Dâu",
+          "description": "Strawberry Matcha",
+          "prices": { "S": "40K", "M": "50K", "L": "60K" },
+          "image": "/img/strawberry-matcha.png"
+        },
+        {
+          "id": "strawberry-milk-matcha-latte",
+          "name": "Matcha Latte Sữa Dâu",
+          "description": "Strawberry Milk Matcha Latte",
+          "prices": { "S": "40K", "M": "50K", "L": "60K" },
+          "image": "/img/strawberry-milk-matcha-latte.png"
         },
         {
           "id": "dalgona-matcha",
-          "name": "Dalgona Matcha",
-          "description": "Kem matcha đánh bọt mềm mịn trên nền sữa tươi",
-          "prices": {
-            "S": "50K",
-            "M": "60K",
-            "L": "70K"
-          },
-          "image": "/img/dalgona-matcha.jpg"
+          "name": "Matcha Dalgona",
+          "description": "Dalgona Matcha",
+          "prices": { "S": "40K", "M": "50K", "L": "60K" },
+          "image": "/img/dalgona-matcha.png"
         },
         {
-          "id": "matcha-strawberry",
-          "name": "Matcha Dâu Tây",
-          "description": "Matcha cao cấp kết hợp với dâu tây tươi ngon",
-          "prices": {
-            "S": "55K",
-            "M": "65K",
-            "L": "75K"
-          },
-          "image": "/img/matcha-strawberry.jpg"
+          "id": "aloe-matcha",
+          "name": "Matcha Nha Đam",
+          "description": "Aloe Matcha",
+          "prices": { "S": "35K", "M": "45K", "L": "55K" },
+          "image": "/img/aloe-matcha.png"
+        },
+        {
+          "id": "pink-matcha-macchiato",
+          "name": "Matcha Macchiato Hồng",
+          "description": "Pink Matcha Macchiato",
+          "prices": { "S": "40K", "M": "50K", "L": "60K" },
+          "image": "/img/pink-matcha-macchiato.png"
+        },
+        {
+          "id": "matcha-macchiato",
+          "name": "Matcha Macchiato",
+          "description": "Rich and creamy matcha macchiato.",
+          "prices": { "S": "40K", "M": "50K", "L": "60K" },
+          "image": "/img/matcha-macchiato.png"
         }
       ]
     },
     "coffee": {
-      "name": "Cà Phê Espresso Đậm Đà",
+      "name": "Cà Phê",
       "items": [
         {
           "id": "americano",
           "name": "Americano",
-          "description": "Espresso đậm đà, thơm lừng pha với nước nóng",
-          "prices": {
-            "S": "30K",
-            "M": "40K", 
-            "L": "50K"
-          },
-          "image": "/img/americano.jpg"
+          "description": "Moka brew",
+          "prices": { "S": "30K", "M": "40K", "L": "50K" },
+          "image": "/img/americano.png"
         },
         {
-          "id": "latte",
-          "name": "Cà Phê Latte",
-          "description": "Espresso mềm mại với sữa tươi đánh bọt",
-          "prices": {
-            "S": "40K",
-            "M": "50K",
-            "L": "60K"
-          },
-          "image": "/img/latte.jpg"
+          "id": "cafe-sua",
+          "name": "Cafe Sữa",
+          "description": "Milk Coffee (Vn Style)",
+          "prices": { "S": "35K", "M": "45K", "L": "55K" },
+          "image": ""
         },
         {
-          "id": "vietnamese-milk-coffee",
-          "name": "Cà Phê Sữa Việt Nam",
-          "description": "Cà phê truyền thống Việt Nam với sữa đặc ngọt ngào",
-          "prices": {
-            "S": "35K",
-            "M": "45K",
-            "L": "55K"
-          },
-          "image": "/img/vietnamese-coffee.jpg"
+          "id": "cafe-muoi",
+          "name": "Cafe Muối",
+          "description": "Salted Coffee Cream (Vn Style)",
+          "prices": { "S": "35K", "M": "45K", "L": "55K" },
+          "image": ""
+        }
+      ]
+    },
+    "tea": {
+      "name": "Trà & Trà Trân Châu",
+      "items": [
+        {
+          "id": "kumquat-tea",
+          "name": "Trà Tắc",
+          "description": "Kumquat Tea / Calamansi Tea",
+          "prices": { "S": "30K", "M": "40K", "L": "50K" },
+          "image": ""
+        },
+        {
+          "id": "peach-tea",
+          "name": "Trà Đào",
+          "description": "Peach Tea",
+          "prices": { "S": "35K", "M": "45K", "L": "55K" },
+          "image": "/img/peach-tea.png"
+        },
+        {
+          "id": "strawberry-tea",
+          "name": "Trà Dâu",
+          "description": "Strawberry Tea",
+          "prices": { "S": "35K", "M": "50K", "L": "55K" },
+          "image": "/img/strawberry-tea.png"
         }
       ]
     }
